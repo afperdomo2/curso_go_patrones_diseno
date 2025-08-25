@@ -54,6 +54,7 @@ func GetFibonacci(n int) (any, error) {
 func main() {
 	cache := newMemory(GetFibonacci)
 	fibonacciNumbers := []int{35, 40, 44, 40, 45}
+
 	for _, n := range fibonacciNumbers {
 		start := time.Now()
 
